@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compound Interest Calc</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <div class="container">
+        <div class="app">
+            <h1>Compound Interest Calc</h1>
+            <form id="form" class="form">
+                <input id="initialAmount" type="number" min="1" max="99999" placeholder="Initial amount" required>
+                <input id="leverage" type="number" min="1" max="125" placeholder="Leverage" required>
+                <input id="steps" type="number" min="1" max="99999" placeholder="Steps" required>
+                <input id="profitPerStep" type="number" min="1" max="99999" placeholder="Profit per step" required>
+                <button type="submit">Calc</button>
+            </form>
+            <div id="result"></div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
